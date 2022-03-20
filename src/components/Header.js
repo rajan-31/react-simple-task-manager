@@ -1,7 +1,7 @@
 export default function Header() {
     return(
-        <div style={{background: "yellow"}}>
-            <h1 style={{textAlign: "center", margin: 0}}> Task Manager</h1>
+        <div className='p-2 bg-cyan-500'>
+            <h1 className="font-sans text-neutral-800 text-3xl text-center">Task Manager</h1>
         </div>
     )
 }

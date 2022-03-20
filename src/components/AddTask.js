@@ -17,13 +17,21 @@ export default function AddTask({addTask}) {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="grid grid-cols-3 gap-8 text-lg ">
             <input type="text" placeholder="Add new Task..."
             value={newTask} 
-            onChange={(e) => setNewTask(e.target.value)} 
+            onChange={(e) => setNewTask(e.target.value)}
+            className="rounded col-span-2 p-1
+            outline-0 
+            border-2 border-gray-300 focus:border-rose-500"
             />
 
-            <button type="submit">Add Task</button>
+            <button type="submit"
+            className="rounded-md p-1
+            text-white
+            outline-0
+            bg-emerald-600 hover:bg-emerald-700"
+            >Add Task</button>
         </form>
     )
 }

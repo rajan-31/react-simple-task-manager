@@ -33,9 +33,9 @@ export default function MainSection() {
     }
 
     return (
-        <>
+        <div className="pt-4 px-10">
             <AddTask addTask={addTask} />
             <Container tasks={tasks} deleteTask={deleteTask} />
-        </>
+        </div>
     )
 }
