@@ -1,7 +1,11 @@
 import { useState } from "react"
+import { useDispatch } from "react-redux";
+import { addTask } from "../features/tasks/tasksSlice"
 
-export default function AddTask({addTask}) {
+export default function AddTask() {
     const [newTask, setNewTask] = useState("")
+
+    const dispatch = useDispatch();
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -11,7 +15,7 @@ export default function AddTask({addTask}) {
             return
         }
 
-        addTask(newTask)
+        dispatch(addTask({content: newTask}))
 
         setNewTask("")
     }

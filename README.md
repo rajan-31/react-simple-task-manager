@@ -5,6 +5,7 @@
 - main: final version (copy of last branch)
 - v1: basic app with no styling
 - v2: styling using [Tailwind CSS](https://tailwindcss.com/)
+- v3: adding redux for state management ( using [react-redux](https://react-redux.js.org/introduction/getting-started) and [redux toolkit](https://redux-toolkit.js.org/introduction/getting-started) )
 
 ### To install required packages run
 
